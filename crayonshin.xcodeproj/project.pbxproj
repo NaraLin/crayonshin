@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		49F0B0D32BCEBC4000067879 /* crayonshinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F0B0D22BCEBC4000067879 /* crayonshinViewController.swift */; };
+		49F0B0D52BD26EC000067879 /* QandAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F0B0D42BD26EC000067879 /* QandAViewController.swift */; };
+		49F0B0D72BD298E900067879 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F0B0D62BD298E900067879 /* Question.swift */; };
 		49F79C152BCE5EB5001F8B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F79C142BCE5EB5001F8B87 /* AppDelegate.swift */; };
 		49F79C172BCE5EB5001F8B87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F79C162BCE5EB5001F8B87 /* SceneDelegate.swift */; };
-		49F79C192BCE5EB5001F8B87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F79C182BCE5EB5001F8B87 /* ViewController.swift */; };
 		49F79C1C2BCE5EB6001F8B87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F79C1A2BCE5EB6001F8B87 /* Main.storyboard */; };
 		49F79C1E2BCE5EC2001F8B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F79C1D2BCE5EC2001F8B87 /* Assets.xcassets */; };
 		49F79C212BCE5EC2001F8B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F79C1F2BCE5EC2001F8B87 /* LaunchScreen.storyboard */; };
@@ -18,10 +19,11 @@
 
 /* Begin PBXFileReference section */
 		49F0B0D22BCEBC4000067879 /* crayonshinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crayonshinViewController.swift; sourceTree = "<group>"; };
-		49F79C112BCE5EB5001F8B87 /* play baseball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "play baseball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49F0B0D42BD26EC000067879 /* QandAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QandAViewController.swift; sourceTree = "<group>"; };
+		49F0B0D62BD298E900067879 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		49F79C112BCE5EB5001F8B87 /* crayonshin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crayonshin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49F79C142BCE5EB5001F8B87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49F79C162BCE5EB5001F8B87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		49F79C182BCE5EB5001F8B87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		49F79C1B2BCE5EB6001F8B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49F79C1D2BCE5EC2001F8B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49F79C202BCE5EC2001F8B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,10 +41,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49B06CCA2BD61DC9000535AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				49F0B0D62BD298E900067879 /* Question.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49B06CCB2BD61DF8000535AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				49F0B0D22BCEBC4000067879 /* crayonshinViewController.swift */,
+				49F0B0D42BD26EC000067879 /* QandAViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		49F79C082BCE5EB5001F8B87 = {
 			isa = PBXGroup;
 			children = (
-				49F79C132BCE5EB5001F8B87 /* play baseball */,
+				49F79C132BCE5EB5001F8B87 /* crayonshin */,
 				49F79C122BCE5EB5001F8B87 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,32 +69,32 @@
 		49F79C122BCE5EB5001F8B87 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				49F79C112BCE5EB5001F8B87 /* play baseball.app */,
+				49F79C112BCE5EB5001F8B87 /* crayonshin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		49F79C132BCE5EB5001F8B87 /* play baseball */ = {
+		49F79C132BCE5EB5001F8B87 /* crayonshin */ = {
 			isa = PBXGroup;
 			children = (
 				49F79C142BCE5EB5001F8B87 /* AppDelegate.swift */,
 				49F79C162BCE5EB5001F8B87 /* SceneDelegate.swift */,
-				49F79C182BCE5EB5001F8B87 /* ViewController.swift */,
 				49F79C1A2BCE5EB6001F8B87 /* Main.storyboard */,
-				49F0B0D22BCEBC4000067879 /* crayonshinViewController.swift */,
+				49B06CCA2BD61DC9000535AF /* Model */,
+				49B06CCB2BD61DF8000535AF /* Controller */,
 				49F79C1D2BCE5EC2001F8B87 /* Assets.xcassets */,
 				49F79C1F2BCE5EC2001F8B87 /* LaunchScreen.storyboard */,
 				49F79C222BCE5EC2001F8B87 /* Info.plist */,
 			);
-			path = "play baseball";
+			path = crayonshin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		49F79C102BCE5EB5001F8B87 /* play baseball */ = {
+		49F79C102BCE5EB5001F8B87 /* crayonshin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49F79C252BCE5EC2001F8B87 /* Build configuration list for PBXNativeTarget "play baseball" */;
+			buildConfigurationList = 49F79C252BCE5EC2001F8B87 /* Build configuration list for PBXNativeTarget "crayonshin" */;
 			buildPhases = (
 				49F79C0D2BCE5EB5001F8B87 /* Sources */,
 				49F79C0E2BCE5EB5001F8B87 /* Frameworks */,
@@ -85,9 +104,9 @@
 			);
 			dependencies = (
 			);
-			name = "play baseball";
+			name = crayonshin;
 			productName = "play baseball";
-			productReference = 49F79C112BCE5EB5001F8B87 /* play baseball.app */;
+			productReference = 49F79C112BCE5EB5001F8B87 /* crayonshin.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +124,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 49F79C0C2BCE5EB5001F8B87 /* Build configuration list for PBXProject "play baseball" */;
+			buildConfigurationList = 49F79C0C2BCE5EB5001F8B87 /* Build configuration list for PBXProject "crayonshin" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +137,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				49F79C102BCE5EB5001F8B87 /* play baseball */,
+				49F79C102BCE5EB5001F8B87 /* crayonshin */,
 			);
 		};
 /* End PBXProject section */
@@ -141,8 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49F79C192BCE5EB5001F8B87 /* ViewController.swift in Sources */,
+				49F0B0D52BD26EC000067879 /* QandAViewController.swift in Sources */,
 				49F79C152BCE5EB5001F8B87 /* AppDelegate.swift in Sources */,
+				49F0B0D72BD298E900067879 /* Question.swift in Sources */,
 				49F79C172BCE5EB5001F8B87 /* SceneDelegate.swift in Sources */,
 				49F0B0D32BCEBC4000067879 /* crayonshinViewController.swift in Sources */,
 			);
@@ -296,8 +316,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6H9287UZN4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "play baseball/Info.plist";
+				INFOPLIST_FILE = crayonshin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -308,7 +329,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nara.play-baseball";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nara.crayonshin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -323,8 +344,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6H9287UZN4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "play baseball/Info.plist";
+				INFOPLIST_FILE = crayonshin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -335,7 +357,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nara.play-baseball";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nara.crayonshin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -346,7 +368,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		49F79C0C2BCE5EB5001F8B87 /* Build configuration list for PBXProject "play baseball" */ = {
+		49F79C0C2BCE5EB5001F8B87 /* Build configuration list for PBXProject "crayonshin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				49F79C232BCE5EC2001F8B87 /* Debug */,
@@ -355,7 +377,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		49F79C252BCE5EC2001F8B87 /* Build configuration list for PBXNativeTarget "play baseball" */ = {
+		49F79C252BCE5EC2001F8B87 /* Build configuration list for PBXNativeTarget "crayonshin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				49F79C262BCE5EC2001F8B87 /* Debug */,
